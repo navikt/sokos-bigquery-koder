@@ -17,6 +17,6 @@
         <appender-ref ref="CONSOLE"/>
     </root>
 
-    <logger name="no.nav.sokos.bigquery.DINAPP" level="ERROR"/>
+    <logger name="no.nav.sokos.bigquery.koder" level="ERROR"/>
 
 </configuration>

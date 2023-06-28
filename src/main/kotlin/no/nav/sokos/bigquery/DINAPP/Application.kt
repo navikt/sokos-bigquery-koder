@@ -1,9 +1,9 @@
-package no.nav.sokos.bigquery.DINAPP
+package no.nav.sokos.bigquery.koder
 
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import no.nav.sokos.bigquery.DINAPP.database.Db2DataSource
+import no.nav.sokos.bigquery.koder.database.Db2DataSource
 import java.util.*
 import java.util.concurrent.TimeUnit
 

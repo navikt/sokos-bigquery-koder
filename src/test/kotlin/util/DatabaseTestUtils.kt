@@ -1,7 +1,7 @@
 package util
 
-import no.nav.sokos.bigquery.DINAPP.config.PropertiesConfig
-import no.nav.sokos.bigquery.DINAPP.database.Db2DataSource
+import no.nav.sokos.bigquery.koder.config.PropertiesConfig
+import no.nav.sokos.bigquery.koder.database.Db2DataSource
 import org.testcontainers.containers.Db2Container
 
 

@@ -1,4 +1,4 @@
-package no.nav.sokos.bigquery.DINAPP.config
+package no.nav.sokos.bigquery.koder.config
 
 
 import com.google.api.gax.retrying.RetrySettings

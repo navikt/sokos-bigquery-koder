@@ -1,10 +1,10 @@
 @file:Suppress("SqlNoDataSourceInspection")
 
-package no.nav.sokos.bigquery.DINAPP.database
+package no.nav.sokos.bigquery.koder.database
 
 import mu.KotlinLogging
-import no.nav.sokos.bigquery.DINAPP.database.RepositoryExtensions.toExampleObject
-import no.nav.sokos.bigquery.DINAPP.domain.KodeBeskrivelse
+import no.nav.sokos.bigquery.koder.database.RepositoryExtensions.toExampleObject
+import no.nav.sokos.bigquery.koder.domain.KodeBeskrivelse
 import java.sql.Connection
 
 object Repository {

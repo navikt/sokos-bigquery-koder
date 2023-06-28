@@ -24,6 +24,6 @@
         </if>
     </root>
 
-    <logger name="no.nav.sokos.bigquery.DINAPP" level="INFO"/>
+    <logger name="no.nav.sokos.bigquery.koder" level="INFO"/>
 
 </configuration>

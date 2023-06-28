@@ -1,4 +1,4 @@
-package no.nav.sokos.bigquery.DINAPP.domain
+package no.nav.sokos.bigquery.koder.domain
 
 data class KodeBeskrivelse(
     val type: String?,

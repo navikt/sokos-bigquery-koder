@@ -1,10 +1,10 @@
-package no.nav.sokos.bigquery.DINAPP.database
+package no.nav.sokos.bigquery.koder.database
 
 import com.ibm.db2.jcc.DB2BaseDataSource
 import com.ibm.db2.jcc.DB2SimpleDataSource
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
-import no.nav.sokos.bigquery.DINAPP.config.PropertiesConfig
+import no.nav.sokos.bigquery.koder.config.PropertiesConfig
 import java.sql.Connection
 
 class Db2DataSource(

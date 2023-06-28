@@ -1,7 +1,7 @@
 apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
-  name: sokos-bigquery-DINAPP
+  name: sokos-bigquery-koder
   namespace: okonomi
   labels:
     "team": okonomi
@@ -24,8 +24,8 @@ spec:
       cpu: 3000m
       memory: 32Gi
   ingresses:
-    - https://sokos-bigquery-DINAPP.dev.intern.nav.no
-    - https://sokos-bigquery-DINAPP.dev-fss-pub.nais.io
+    - https://sokos-bigquery-koder.dev.intern.nav.no
+    - https://sokos-bigquery-koder.dev-fss-pub.nais.io
   env:
     - name: DATABASE_HOST
       value: "din host her"

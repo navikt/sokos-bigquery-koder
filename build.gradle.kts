@@ -73,7 +73,7 @@ kotlin {
 }
 
 application {
-    mainClass.set("no.nav.sokos.bigquery.DINAPP.ApplicationKt")
+    mainClass.set("no.nav.sokos.bigquery.koder.ApplicationKt")
 }
 
 tasks {
@@ -86,7 +86,7 @@ tasks {
         enabled = true
         archiveFileName.set("app.jar")
         manifest {
-            attributes["Main-Class"] = "no.nav.sokos.bigquery.DINAPP.ApplicationKt"
+            attributes["Main-Class"] = "no.nav.sokos.bigquery.koder.ApplicationKt"
             attributes["Class-Path"] = "/var/run/secrets/db2jcc_license_cisuz.jar"
         }
     }

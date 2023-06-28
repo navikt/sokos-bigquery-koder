@@ -1,6 +1,6 @@
-package no.nav.sokos.bigquery.DINAPP.database
+package no.nav.sokos.bigquery.koder.database
 
-import no.nav.sokos.bigquery.DINAPP.domain.KodeBeskrivelse
+import no.nav.sokos.bigquery.koder.domain.KodeBeskrivelse
 import java.sql.ResultSet
 
 object RepositoryExtensions {

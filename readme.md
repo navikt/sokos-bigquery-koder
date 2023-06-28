@@ -16,12 +16,12 @@ For å kunne kjøre InsertionTest (test for insertion i BigQuery) må du ha depl
 ```
 chmod 755 setupLocalEnvironment.sh && ./setupLocalEnvironment.sh
 ```
-Denne vil opprette [default.properties](defaults.properties) med alle environmentvariabler du trenger for å kjøre applikasjonen som er definert i [PropertiesConfig](src/main/kotlin/no.nav.sokos.bigquery.DINAPP/config/PropertiesConfig.kt)  
+Denne vil opprette [default.properties](defaults.properties) med alle environmentvariabler du trenger for å kjøre applikasjonen som er definert i [PropertiesConfig](src/main/kotlin/no.nav.sokos.bigquery.koder/config/PropertiesConfig.kt)  
 For å kunne teste lokalt må du gjøre dette slik at du får tak i GCP BigQuery ServiceUser credentials.
 
 Du må ha Docker installert for å kunne kjøre testene som bruker testcontainere. 
 
 # 3. Endringer du må gjøre
-* Endre forekomster av "DINAPP" til ditt appnavn
+* Endre forekomster av "koder" til ditt appnavn
 * Endre databaseinformasjon i naiserator-dev.yaml
 * Legg til GCP BigQuery service user secret i github (for github actions) og kall den "GOOGLE_APPLICATION_CREDENTIALS"
