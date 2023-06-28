@@ -12,7 +12,7 @@ import java.io.File
 object PropertiesConfig {
     private val defaultProperties = ConfigurationMap(
         mapOf(
-            "NAIS_APP_NAME" to "sokos-bigquery-DINAPP",
+            "NAIS_APP_NAME" to "sokos-bigquery-koder",
             "NAIS_NAMESPACE" to "okonomi",
         )
     )

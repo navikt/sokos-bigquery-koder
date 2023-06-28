@@ -9,7 +9,7 @@ kubectl config use-context dev-fss
 kubectl config set-context --current --namespace=okonomi
 
 # Get bigquery system variables
-envValue=$(kubectl exec -it $(kubectl get pods | grep sokos-bigquery-DINAPP | cut -f1 -d' ') -c sokos-bigquery-DINAPP  -- env | egrep -A11 "GOOGLE_APPLICATION_CREDENTIALS"  )
+envValue=$(kubectl exec -it $(kubectl get pods | grep sokos-bigquery-koder | cut -f1 -d' ') -c sokos-bigquery-koder  -- env | egrep -A11 "GOOGLE_APPLICATION_CREDENTIALS"  )
 
 # Set bigquery as local environment variables
 rm -f defaults.properties

@@ -1,14 +1,15 @@
 package no.nav.sokos.bigquery.DINAPP.database
 
-import no.nav.sokos.bigquery.DINAPP.domain.db2.Db2EksempelMappingObject
+import no.nav.sokos.bigquery.DINAPP.domain.KodeBeskrivelse
 import java.sql.ResultSet
 
 object RepositoryExtensions {
 
     fun ResultSet.toExampleObject() = toList {
-        Db2EksempelMappingObject(
-            kolonne1 = getString("KOLONNE1"),
-            kolonne2 = getInt("KOLONNE2")
+        KodeBeskrivelse(
+            type = getString("TYPE"),
+            kode = getString("KODE"),
+            beskrivelse = getString("BESKRIVELSE")
         )
     }
 

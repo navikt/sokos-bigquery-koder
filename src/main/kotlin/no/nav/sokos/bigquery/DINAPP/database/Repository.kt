@@ -1,8 +1,10 @@
+@file:Suppress("SqlNoDataSourceInspection")
+
 package no.nav.sokos.bigquery.DINAPP.database
 
 import mu.KotlinLogging
 import no.nav.sokos.bigquery.DINAPP.database.RepositoryExtensions.toExampleObject
-import no.nav.sokos.bigquery.DINAPP.domain.db2.Db2EksempelMappingObject
+import no.nav.sokos.bigquery.DINAPP.domain.KodeBeskrivelse
 import java.sql.Connection
 
 object Repository {
@@ -17,11 +19,16 @@ object Repository {
         }
     }
 
-    fun Connection.getData(): List<Db2EksempelMappingObject> {
+    fun Connection.getData(): List<KodeBeskrivelse> {
         return try {
             prepareStatement(
                 """
-                    SELECT KOLONNE1, KOLONNE2 FROM $schema.TEST_TABLE
+                    select TYPE, KODE, BESKRIVELSE from
+                        (select 'FAGGRUPPE' as TYPE, KODE_FAGGRUPPE as KODE, NAVN_FAGGRUPPE as BESKRIVELSE from T_FAGGRUPPE
+                         union
+                         select 'OMRAADE' as TYPE, KODE_FAGOMRAADE as KODE, NAVN_FAGOMRAADE as BESKRIVELSE from T_FAGOMRAADE
+                         union
+                         select 'KLASSE' as TYPE, KODE_KLASSE as KODE, BESKR_KLASSE as BESKRIVELSE from T_KLASSEKODE) A
                 """.trimIndent()
             ).executeQuery().toExampleObject()
         }catch (e: Exception){

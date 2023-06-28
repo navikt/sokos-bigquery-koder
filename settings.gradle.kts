@@ -1,3 +1,3 @@
 
-rootProject.name = "sokos-bigquery-template"
+rootProject.name = "sokos-bigquery-koder"
 
