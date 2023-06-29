@@ -14,7 +14,7 @@ spec:
     cpuThresholdPercentage: 50
   webproxy: true
   envFrom:
-    - secret: database-credentials
+    - secret: t1-os-credentials
     - secret: bigquery-credentials
   filesFrom:
     - secret: db2license
@@ -30,12 +30,10 @@ spec:
     - https://sokos-bigquery-koder.dev-fss-pub.nais.io
   env:
     - name: DATABASE_HOST
-      value: "din host her"
+      value: "ztest.test.local"
     - name: DATABASE_PORT
-      value: "din port her"
+      value: "5023"
     - name: DATABASE_NAME
-      value: "databasenavn her"
+      value: "TDB2"
     - name: DATABASE_SCHEMA
-      value: "schema her"
-    - name: HIKARI_TEST_TABLE
-      value: "tabell for hikari connection test"
+      value: "OS314T1"
