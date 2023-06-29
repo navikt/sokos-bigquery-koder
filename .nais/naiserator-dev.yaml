@@ -20,9 +20,11 @@ spec:
     - secret: db2license
 
   resources:
+    limits:
+      memory: 16Gi
     requests:
       cpu: 3000m
-      memory: 32Gi
+      memory: 16Gi
   ingresses:
     - https://sokos-bigquery-koder.dev.intern.nav.no
     - https://sokos-bigquery-koder.dev-fss-pub.nais.io
