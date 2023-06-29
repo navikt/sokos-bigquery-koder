@@ -24,11 +24,11 @@ object Repository {
             prepareStatement(
                 """
                     select TYPE, KODE, BESKRIVELSE from
-                        (select 'FAGGRUPPE' as TYPE, KODE_FAGGRUPPE as KODE, NAVN_FAGGRUPPE as BESKRIVELSE from T_FAGGRUPPE
+                        (select 'FAGGRUPPE' as TYPE, KODE_FAGGRUPPE as KODE, NAVN_FAGGRUPPE as BESKRIVELSE from $schema.T_FAGGRUPPE
                          union
-                         select 'OMRAADE' as TYPE, KODE_FAGOMRAADE as KODE, NAVN_FAGOMRAADE as BESKRIVELSE from T_FAGOMRAADE
+                         select 'OMRAADE' as TYPE, KODE_FAGOMRAADE as KODE, NAVN_FAGOMRAADE as BESKRIVELSE from $schema.T_FAGOMRAADE
                          union
-                         select 'KLASSE' as TYPE, KODE_KLASSE as KODE, BESKR_KLASSE as BESKRIVELSE from T_KLASSEKODE) A
+                         select 'KLASSE' as TYPE, KODE_KLASSE as KODE, BESKR_KLASSE as BESKRIVELSE from $schema.T_KLASSEKODE) A
                 """.trimIndent()
             ).executeQuery().toExampleObject()
         }catch (e: Exception){
