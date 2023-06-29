@@ -58,8 +58,8 @@ object PropertiesConfig {
         val port: Int = get("DATABASE_PORT").toInt(),
         val name: String = get("DATABASE_NAME"),
         val schema: String = get("DATABASE_SCHEMA"),
-        val username: String = get("DB_USERNAME"),
-        val password: String = get("DB_PASSWORD"),
+        val username: String = get("OS_USERNAME"),
+        val password: String = get("OS_PASSWORD"),
         val testTable: String = get("HIKARI_TEST_TABLE")
     )
 
