@@ -24,7 +24,7 @@ val natpryceVersion = "1.6.10.0"
 val bigQueryVersion = "2.24.5"
 
 val kotestVersion = "5.5.4"
-val mockkVersion = "1.13.4"
+val mockkVersion = "1.13.7"
 val db2TestContainerVersion = "1.17.6"
 
 val prometheusVersion = "1.10.4"
